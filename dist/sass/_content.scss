@@ -26,6 +26,11 @@
         margin: 0;
         background-blend-mode: color-dodge;
         border-bottom: .5rem solid rgba($color-blue, .3);
+        @media (max-width: 29.6875em){
+            height: 100%;
+            overflow: hidden;
+    
+        }
     }
 
 }
