@@ -1,0 +1,142 @@
+.sub{
+    &--svg{
+        width: 4rem;
+        height: 4rem;
+        // fill: red;
+    }
+    &--facebook{ //facebook
+        fill: $color-blue;
+    }
+
+    &--twitter{//twitter
+        fill: $color-sky-blue;
+    }
+
+    &--youtube{//youtube
+        fill: $color-red;
+    }
+
+    &--google-circle{//google-plus
+        fill: $color-red-crimson;
+    }
+}
+
+
+.profile{
+    border-radius: 50%;
+    box-shadow: 0 0 .5rem $color-black;
+    background-size: cover;
+}
+
+.home{
+    &__paragraph{
+        letter-spacing: .1rem;
+        color: $color-black;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 0 .5rem;
+        
+        &--quotes{
+            width: .7rem;
+            height: .7rem;
+            fill: $color-black;
+        }
+    }
+
+}
+
+
+.dev{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    &__icons{
+        border-radius: 50%;
+    }
+
+    &__content{
+        background: rgba($color-white, .5);
+        margin: 0 auto;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        margin-bottom: 3rem;
+        border-radius: .5rem;
+        transition: all .3s ease-in;
+        box-shadow: 0 0 .5rem rgba($color-black, .3);
+        &:hover{
+            transform: scale(1.1);
+        }
+        &--subtitle{
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $color-black;
+            padding: 1rem 0;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+        &--html{
+            color: $color-coral;
+        }
+
+        &--css{
+            color: $color-blue;
+        }
+
+        &--javascript{
+            color: $color-yellow;
+        }
+        &--paragraph{
+            padding: 3rem;
+            text-align: justify;
+            font-weight: 300;
+            color: $color-black;
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+
+        }
+       
+    }
+    &__icons{
+    
+        &--html{//html logo
+            fill: $color-coral;
+            margin-top: .6rem;
+            margin-left: 1rem;
+            border-radius: 50%;
+            @media (max-width: 600px){
+                margin-left: 8rem;
+            }
+        
+            
+        }
+        &--logo{//css logo
+            fill: $color-blue;
+            margin-left: 3rem;
+            border-radius: 50%;
+            @media (max-width: 600px){
+                margin-left: 8rem;
+            }
+        }
+
+        &--javascript{//javascript logo
+            fill: $color-yellow;
+            margin-top: .6rem;
+            margin-left: 1rem;
+            border-radius: 50%;
+            @media (max-width: 600px){
+                margin-left: 8rem;
+            }
+        }
+    }
+}
+
+.footer{
+    &__paragraph{
+        .fas{
+            color: $color-red;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+.home{
+    position: relative;
+    &--title{
+        font-size: 1.2rem;
+        font-family: 'Times New Roman', Times, serif;
+        padding: .5rem 1rem;
+        font-weight: 500;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        color: $color-black;
+    }
+
+    &__paragraph{
+        font-size: 1rem;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: .1rem;
+        padding: .5rem;
+        text-align: justify;
+        color: $color-grey;
+        strong{
+            font-size: 1.2rem;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            
+        }
+
+    a{
+        text-decoration: none;
+    }
+    }
+
+    &__list{
+        list-style: none;
+        padding: .5rem 0;
+        &--items{
+            padding: .5rem;
+            font-size: 1.2rem;
+            font-weight: 100;
+            letter-spacing: .1rem;
+            text-transform: capitalize;
+            span{
+                font-size: 1.2rem;
+                font-weight: 900;
+                color: rgba($color-grey-dark, .3);
+            }
+        }
+    }
+}
+
+.feature{
+    background-color: $color-sky-blue;
+    &__dev{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__content{
+            // box-shadow: 0 0 .5rem rgba($color-black, .3);
+            &__icons{
+                // box-shadow: 0 0 .5rem rgba($color-black, .3);
+                &--responsive{
+                    border: .2rem red solid;
+                }
+            }
+        }
+    }
+}
+
+.title{
+    margin: .5rem 0;
+    &__text{
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        text-align: center;
+        padding: 2rem 0;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        color: $color-white;
+        font-style: oblique;
+    }
+}
+
+.btn{
+    &__btn-primary{
+        transform: translate(-50%, -50%);
+        margin: auto 50rem;
+        background-color: rgba($color-sky-blue, .6);
+        padding: .8rem;
+        color: $color-white;
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-decoration: none;
+        border-radius: .4rem;
+        box-shadow: 0 0 .5rem rgba($color-black, .6);
+        text-transform: capitalize;
+        transition: all .3s;
+        &:hover{
+            background-color: $color-blue-dark;
+            color: $color-white;
+            font-style: oblique;
+        }
+
+    }
+
+}
+
