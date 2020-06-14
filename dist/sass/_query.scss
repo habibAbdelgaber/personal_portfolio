@@ -1,0 +1,174 @@
+@media (min-width: 112.5em){//big-desktop
+    body{
+    //    background-color: $color-grey-dark;
+       padding: 5rem;
+       line-height: 1.8rem;
+       overflow: scroll;
+    }
+   
+   }
+
+
+@media (max-width: 75em){//tablet-landscape - 1200px
+    body{
+        // background-color: rgba($color-grey, .5);
+        padding: 2em;
+    }
+
+
+   .btn{
+       &__btn-primary{
+           margin: auto 12em;
+       }
+   }
+
+    .footer{
+        background-color: rgba($color-sky-blue, .5);
+    }
+
+}
+
+
+@media (max-width: 56.25em){//tablet-portrait - 900px
+    body{
+        background-color: $color-blue-cyan;
+        padding: 3em;
+    }
+
+    .container{
+        &__showcase{
+            background: url('/images/bg-sky.jpg') top center no-repeat;
+            background-size: cover;
+            height: 95vh;
+        }
+    }
+
+
+    .dev{
+        &__icons{
+            &--html{
+                margin-left: 22em;
+            }
+
+            &--logo{
+                margin-left: 22em;
+            }
+
+            &--javascript{
+                margin-left: 22em;
+            }
+        }
+    }
+
+
+    .btn{
+        &__btn-primary{
+            margin: auto 7em;
+        }
+    }
+
+    .feature{
+        &__dev{
+            display: flex;
+            flex-wrap: wrap;
+            &__icons{
+                margin: auto;
+            }
+        }
+    }
+
+    .footer{
+        background-color: rgba($color-sky-blue, .5);
+        &__paragraph{
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+    }
+}
+
+@media (max-width: 37.5em){//phone - 600px
+    body{
+        background-color: $color-lightgreen;
+        line-height: 1.7em;
+        padding: 2em;
+    }
+
+    .container{
+        &__showcase{
+            height: 70vh;
+        }
+    }
+
+
+    .btn{
+        &__btn-primary{
+            margin: auto 2em;
+        }
+    }
+
+
+    .feature{
+        &__dev{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    .footer{
+        background-color: rgba($color-sky-blue, .5);
+    }
+}
+
+
+@media (max-width: 22em){// Small devices - 350px
+    body{
+        background-color: $color-blue-dark;
+        padding: 2em;
+    }
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container{
+        &__showcase{
+            background: url('/images/bg-sky.jpg') top center no-repeat;
+            background-size: cover;
+            height: 95vh;
+            &__btn{
+                &__btn-primary{
+                    display: none;
+                    margin-top: 1em;
+                    top: 1em;
+                    left: 30%;
+                    transform: translate(-50%, -50%);
+                    margin-top: .5em;
+                }
+            }
+        }
+    }
+
+    .btn{
+        margin-top: 3em;
+        &__btn-primary{
+            margin: 0 0 0 3em;
+        }
+    }
+
+.feature{
+    &__dev{
+        display: flex;
+        flex-wrap: wrap;
+        &__content{
+            &__icons{
+                &--responsive{
+                    width: 10em;
+                    height: 10em;
+                }
+            }
+        }
+    }
+}
+
+} 
+

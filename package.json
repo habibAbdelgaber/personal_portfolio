@@ -1,0 +1,20 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "watch:sass": "node-sass dist/sass/main.scss dist/css/style.css -w",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://habibAbdelgaber.github.io/personal-portfolio",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

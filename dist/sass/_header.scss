@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -.5rem;
+    padding: 1rem 0;
+    &__sub{
+        h3{
+            font-size: 1.5rem;
+            font-weight: 400;
+            font-family: 'Times New Roman', Times, serif;
+            padding: .5rem 0;
+            color: $color-black;
+            
+        }
+    }
+}
