@@ -24,10 +24,6 @@
             font-weight: 700;
             
         }
-
-    a{
-        text-decoration: none;
-    }
     }
 
     &__list{
@@ -81,28 +77,4 @@
     }
 }
 
-.btn{
-    &__btn-primary{
-        transform: translate(-50%, -50%);
-        margin: auto 50rem;
-        background-color: rgba($color-sky-blue, .6);
-        padding: .8rem;
-        color: $color-white;
-        text-align: center;
-        font-size: 1.4rem;
-        font-weight: 300;
-        text-decoration: none;
-        border-radius: .4rem;
-        box-shadow: 0 0 .5rem rgba($color-black, .6);
-        text-transform: capitalize;
-        transition: all .3s;
-        &:hover{
-            background-color: $color-blue-dark;
-            color: $color-white;
-            font-style: oblique;
-        }
-
-    }
-
-}
 

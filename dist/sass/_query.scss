@@ -16,12 +16,6 @@
     }
 
 
-   .btn{
-       &__btn-primary{
-           margin: auto 12em;
-       }
-   }
-
     .footer{
         background-color: rgba($color-sky-blue, .5);
     }
@@ -60,13 +54,6 @@
         }
     }
 
-
-    .btn{
-        &__btn-primary{
-            margin: auto 7em;
-        }
-    }
-
     .feature{
         &__dev{
             display: flex;
@@ -96,13 +83,6 @@
     .container{
         &__showcase{
             height: 70vh;
-        }
-    }
-
-
-    .btn{
-        &__btn-primary{
-            margin: auto 2em;
         }
     }
 
@@ -145,13 +125,6 @@
                     margin-top: .5em;
                 }
             }
-        }
-    }
-
-    .btn{
-        margin-top: 3em;
-        &__btn-primary{
-            margin: 0 0 0 3em;
         }
     }
 
