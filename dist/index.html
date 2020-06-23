@@ -17,17 +17,71 @@
             <div class="heading__title">
                 <h1 class="heading__title--sub-title">
                     <span class="heading__title--sub-title--1">Outdoor</span>
-                    <span class="heading__title--sub-title-2">is where life happens</span>
+                    <span class="heading__title--sub-title--2">is where life happens</span>
                     <a href="#" class="heading__title--sub-title--3 heading__title--btn-primary">get started
                         today&rarr;</a>
                 </h1>
                 <!-- <a href="#" class="heading__title--btn heading__title--btn-primary">get started today</a> -->
             </div>
             <div class="heading__image">
-                <img src="assets/images/bg-sky-2.jpg" alt="">
+                <picture>
+                    <source media="(min-width: 1380px)" srcset="assets/images/lg-screen.jpg 1920w">
+                    <img srcset="assets/images/header-bg.jpg 1280w" alt="">
+                    <source media="(min-width: 360px)" srcset="assets/images/android-v7.jpg">
+                </picture>
             </div>
         </div>
-        <div class="container__content">
+        <div class="container__home">
+            <h1 class="container__home--title">Introduction to hard tools for web developing and designing</h1>
+            <div class="container__home__banners">
+                <div class="container__home__banners--1">
+                    <h2 class="container__home__banners--1--h1">What is html ?</h2>
+                    <p class="container__home__banners--1--p1">
+                        Hypertext Markup Language (HTML) is the standard markup language for documents designed to
+                        be
+                        displayed in a web browser. It can be assisted by technologies such as Cascading Style
+                        Sheets
+                        (CSS) and scripting languages such as JavaScript.
+                        Web browsers receive HTML documents from a web server or from local storage and render the
+                        documents into multimedia web pages. HTML describes the structure of a web page semantically
+                        and
+                        originally included cues for the appearance of the document.
+                        HTML elements are the building blocks of HTML pages. With HTML constructs.
+                    </p>
+                </div>
+                <div class="container__home__banners--2">
+                    <h2 class="container__home__banners--2--h2">What is css ?</h2>
+                    <p class="container__home__banners--2--p2">
+                        Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
+                        of a
+                        document written in a markup language like HTML. CSS is a cornerstone technology of the
+                        World
+                        Wide Web, alongside HTML and JavaScript.
+
+                        CSS is designed to enable the separation of presentation and content, including layout,
+                        colors,
+                        and fonts. This separation can improve content accessibility, provide more flexibility and
+                        control in the specification of presentation characteristics, enable multiple web pages to
+                        share
+                        formatting by specifying the relevant CSS in a separate .css file, and reduce complexity.
+                    </p>
+                </div>
+                <div class="container__home__banners--3">
+                    <h2 class="container__home__banners--3--h3">What is javascript ?</h2>
+                    <p class="container__home__banners--3--p3">JavaScript often abbreviated as JS, is a programming
+                        language that
+                        conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time
+                        compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based
+                        object-orientation, and first-class functions.
+                        Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.
+                        JavaScript enables interactive web pages and is an essential part of web applications. The
+                        vast
+                        majority of websites use it for client-side page behavior, and all major web browsers have a
+                        dedicated JavaScript.</p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container__content">
             <div class="home">
                 <div class="home__box-shadow">
                     <hr>
@@ -191,36 +245,50 @@
                     </div>
                 </div>
             </div>
-            <div class="container__showcase">
-                <h1 class="container__showcase--contact">Contact us we're here if you would like to learn to code, it's
-                    fun
-                    :)</h1>
-                <div class="header">
-                    <div class="header__sub">
-                        <h3><strong>Name:</strong> Habib Abdelgaber</h3>
-                        <h3><strong>Email:</strong> syncchronize75@gmail.com</h3>
-                        <h3><strong>Phone:</strong> +972-543168416</h3>
-                        <h3><strong>Social Media:</strong></h3>
-                        <h3>
-                            <svg class="sub--svg sub--facebook">
-                                <use xlink:href="images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                            <svg class="sub--svg sub--twitter">
+        </div> -->
+        <div class="container__showcase">
+            <div class="container__showcase__header">
+                <h1 class="container__showcase__header--title">Please contact us if you would like to code, it's fun :)
+                </h1>
+                <div class="container__showcase__header__content">
+                    <div class="container__showcase__header__content--1">
+                        <h5 class="container__showcase__header__content--1--info"><strong>Name</strong>: Habib Abdel
+                        </h5>
+                        <h5 class="container__showcase__header__content--1--info"><strong>Email</strong>:
+                            syncchronize@gmail.com</h5>
+                        <h5 class="container__showcase__header__content--1--info"><strong>Phone No</strong>:
+                            +972-543168416</h5>
+                        <h5 class="container__showcase__header__content--1--info"><strong>Social media:</strong></h5>
+                        <a href="#" class="container__showcase__header__content--1--icons">
+                            <svg class="container__showcase__header__content--1--icons--icon twitter">
                                 <use xlink:href="images/sprite.svg#icon-twitter"></use>
                             </svg>
-                            <svg class="sub--svg sub--youtube">
+                            <svg class="container__showcase__header__content--1--icons--icon facebook">
+                                <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                            <svg class="container__showcase__header__content--1--icons--icon youtube">
                                 <use xlink:href="images/sprite.svg#icon-youtube"></use>
                             </svg>
-                            <svg class="sub--svg sub--google-circle">
-                                <use xlink:href="images/sprite.svg#icon-google-with-circle"></use>
+                            <svg class="container__showcase__header__content--1--icons--icon pinterest">
+                                <use xlink:href="images/sprite.svg#icon-pinterest-with-circle"></use>
                             </svg>
-                        </h3>
+                        </a>
+
+
                     </div>
-                    <div class="header__profile">
-                        <img src="images/profile.jpg" alt="No image" srcset="" class="profile">
+                    <div class="container__showcase__header__content--2">
+                        <h4 class="container__showcase__header__content--2--1">Full Stack web dev</h4>
+                        <img src="images/profile.jpg" alt="" class="container__showcase__header__content--2--img">
+
                     </div>
                 </div>
-                <img src="assets/images/bg-sky-2.jpg" alt="Sky bg" class="container--bg">
+            </div>
+            <div class="container__image">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/images/tab-bg.jpg">
+                    <source media="(min-width: 375px)" srcset="assets/images/android-v7.jpg 414w">
+                    <img src="assets/images/feature.jpg 1280w" height="400px" alt="Sky bg" class="container--bg">
+                </picture>
             </div>
         </div>
     </div>
