@@ -3,9 +3,13 @@
         position: relative;
         &__header{
             position: absolute;
-            top: 40%;
+            top: 65%;
             left: 50%;
             transform: translate(-50%, -50%);
+            z-index: 1000;
+            @media (max-width: 375px){
+                top: 40%;
+            }
             &--title{
                 color: $color-white;
                 padding: 1rem 0;

@@ -24,6 +24,10 @@
             text-transform: uppercase;
             font-family: 'Times New Roman', Times, serif;
            font-weight: 100;
+           @media (max-width: 375px){
+               letter-spacing: .1rem;
+            //    padding: ;
+           }
 
             &--1{
                 display: block;
