@@ -46,6 +46,9 @@ body {
       align-content: center;
       grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
       gap: 2rem; }
+      @media (max-width: 768px) {
+        .container__home__banners {
+          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
       .container__home__banners--1 {
         background-color: #fff;
         padding: 1rem;
@@ -140,8 +143,10 @@ body {
   position: relative;
   background-blend-mode: multiply;
   clip-path: polygon(0 0, 100% 0, 100% 400px, 0 100%);
-  height: 95vh;
   margin-top: -.3rem; }
+  @media (max-width: 768px) {
+    .heading {
+      clip-path: polygon(0 0, 80% 0%, 100% 0, 100% 66%, 60% 100%, 20% 100%, 0 100%, 0% 20%); } }
   .heading__image img {
     width: 100%; }
     @media (max-width: 26.5625em) {
@@ -207,6 +212,10 @@ body {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
     text-align: center; }
+    @media (max-width: 425px) {
+      .container__showcase__header--title {
+        font-size: 1.2rem;
+        padding-left: 2rem; } }
     @media (max-width: 375px) {
       .container__showcase__header--title {
         font-size: 1.5rem;
@@ -217,6 +226,9 @@ body {
   align-items: center;
   justify-content: space-evenly;
   align-content: center; }
+  @media (max-width: 425px) {
+    .content {
+      flex-wrap: wrap; } }
   @media (max-width: 375px) {
     .content {
       flex-wrap: wrap; } }
@@ -276,7 +288,8 @@ body {
     text-align: justify;
     margin-top: -1rem;
     font-weight: 100;
-    line-height: 2.5rem; }
+    line-height: 2.5rem;
+    text-align: justify; }
     .about__1--p::first-letter {
       text-transform: uppercase;
       color: #000;
@@ -299,6 +312,15 @@ body {
     font-weight: 100;
     line-height: 2.5rem;
     text-align: center; }
+    @media (max-width: 768px) {
+      .about__2--p2 {
+        text-align: justify; } }
+    @media (max-width: 425px) {
+      .about__2--p2 {
+        text-align: justify; } }
+    @media (max-width: 375px) {
+      .about__2--p2 {
+        text-align: justify; } }
     .about__2--p2::first-letter {
       text-transform: uppercase;
       color: #000;
