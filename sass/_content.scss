@@ -37,6 +37,9 @@
             align-content: center;
             grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
             gap: 2rem;
+            @media (max-width: 768px){
+                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            }
             // grid-row: 1 / span 3;
             
             &--1{
