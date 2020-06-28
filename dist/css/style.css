@@ -29,30 +29,41 @@ body {
         height: 200vh;
         margin-bottom: -19rem; } }
   .container__home {
-    margin: 1.5rem .5rem; }
+    width: 80%;
+    margin: 1rem auto; }
     .container__home--title {
-      padding: 3rem;
+      margin-bottom: 10rem;
+      padding-top: 1rem;
       text-align: center;
-      font-weight: 100;
-      font-family: 'Times New Roman', Times, serif; }
+      font-weight: 200;
+      font-family: 'Josefin Sans', sans-serif; }
       @media (max-width: 375px) {
         .container__home--title {
           font-size: 1.5rem; } }
     .container__home__banners {
       grid-column: 3;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
       align-items: center;
       align-content: center;
       grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
-      gap: 2rem; }
+      gap: 3.5rem;
+      justify-content: center; }
       @media (max-width: 768px) {
         .container__home__banners {
-          grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } }
+          grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr)); } }
       .container__home__banners--1 {
         background-color: #fff;
         padding: 1rem;
         border-radius: .5rem; }
+        .container__home__banners--1--icon {
+          width: 15rem;
+          height: 15rem;
+          border: 0.2rem #fff solid;
+          display: block;
+          margin: 0 auto;
+          border-radius: 50%;
+          margin-top: -4rem; }
         .container__home__banners--1--h1 {
           font-size: 2.3rem;
           font-family: 'Times New Roman', Times, serif;
@@ -62,15 +73,24 @@ body {
           letter-spacing: .1rem;
           color: #ff6600; }
         .container__home__banners--1--p1 {
-          font-size: 1.2rem;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 1.3rem;
+          font-weight: 300;
           font-style: 1.3rem;
-          font-weight: 100;
           letter-spacing: .1rem;
           line-height: 1.6; }
       .container__home__banners--2 {
         background-color: #fff;
         padding: 1rem;
         border-radius: .5rem; }
+        .container__home__banners--2--icon {
+          fill: #0000ff;
+          width: 15rem;
+          height: 15rem;
+          margin-top: -8rem;
+          display: block;
+          margin: 0 auto;
+          border-radius: 50%; }
         .container__home__banners--2--h2 {
           font-size: 2.3rem;
           font-family: 'Times New Roman', Times, serif;
@@ -80,15 +100,23 @@ body {
           letter-spacing: .1rem;
           color: #0000ff; }
         .container__home__banners--2--p2 {
-          font-size: 1.2rem;
-          font-style: oblique;
-          font-weight: 100;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 1.3rem;
+          font-weight: 300;
           letter-spacing: .1rem;
           line-height: 1.6; }
       .container__home__banners--3 {
         background-color: #fff;
         padding: 1rem;
         border-radius: .5rem; }
+        .container__home__banners--3--icon {
+          fill: #ffff00;
+          width: 15rem;
+          height: 15rem;
+          margin-top: -8rem;
+          display: block;
+          margin: 0 auto;
+          border-radius: 50%; }
         .container__home__banners--3--h3 {
           font-size: 2.3rem;
           font-family: 'Times New Roman', Times, serif;
@@ -98,9 +126,9 @@ body {
           letter-spacing: .1rem;
           color: #ffff00; }
         .container__home__banners--3--p3 {
-          font-size: 1.2rem;
-          font-style: 1.3rem;
-          font-weight: 100;
+          font-family: 'Josefin Sans', sans-serif;
+          font-size: 1.3rem;
+          font-weight: 300;
           letter-spacing: .1rem;
           line-height: 1.6; }
 
@@ -341,6 +369,44 @@ body {
         padding: .5rem 0;
         letter-spacing: .1rem;
         margin-left: 1.5rem; }
+  .about__4 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    justify-content: center;
+    padding: 0 2rem; }
+    .about__4--1 {
+      overflow: hidden; }
+      .about__4--1--image {
+        border-radius: .5rem; }
+        @media (max-width: 375px) {
+          .about__4--1--image {
+            width: 95%;
+            height: auto;
+            display: block;
+            margin: 0 auto; } }
+    .about__4--2--title {
+      font-family: 'Josefin Sans', sans-serif;
+      text-transform: uppercase;
+      font-weight: 200;
+      padding-left: 1rem; }
+      .about__4--2--title::first-letter {
+        color: #000; }
+    .about__4--2--p {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.7rem;
+      padding: 1rem;
+      text-align: justify;
+      margin-top: -1rem;
+      font-weight: 100;
+      line-height: 2.5rem; }
+      .about__4--2--p--cta {
+        text-decoration: none;
+        transition: all .5s; }
+        .about__4--2--p--cta:hover {
+          transform: translateX(-1rem); }
 
 /*
 0 - 600px:             Phone
