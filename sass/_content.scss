@@ -19,12 +19,14 @@
     }
 
     &__home{
-        margin: 1.5rem .5rem;
+        width: 80%;
+        margin: 1rem auto;
         &--title{
-            padding: 3rem;
+            margin-bottom: 10rem;
+            padding-top: 1rem;
             text-align: center;
-            font-weight: 100;
-            font-family: 'Times New Roman', Times, serif;
+            font-weight: 200;
+            font-family: 'Josefin Sans', sans-serif;
             @media (max-width: 375px){
                 font-size: 1.5rem;
             }
@@ -32,21 +34,31 @@
         &__banners{
             grid-column: 3;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
             align-items: center;
             align-content: center;
             grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
-            gap: 2rem;
+            gap: 3.5rem;
+            justify-content: center;
             @media (max-width: 768px){
-                grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+                grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
             }
-            // grid-row: 1 / span 3;
             
             &--1{
-                // box-shadow: 0 0 .5rem $color-black;
                 background-color: $color-white;
                 padding: 1rem;
                 border-radius: .5rem;
+                
+                &--icon{
+                    width: 15rem;
+                    height: 15rem;
+                    border: .2rem $color-white solid;
+
+                    display: block;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    margin-top: -4rem;
+                }
                 &--h1{
                     font-size: 2.3rem;
                     font-family: 'Times New Roman', Times, serif;
@@ -58,19 +70,29 @@
                 }
 
                 &--p1{
-                    font-size: 1.2rem;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 300;
                     font-style: 1.3rem;
-                    font-weight: 100;
                     letter-spacing: .1rem;
                     line-height: 1.6;
                 }
             }
 
             &--2{
-                // box-shadow: 0 0 .5rem $color-black;
                 background-color: $color-white;
                 padding: 1rem;
                 border-radius: .5rem;
+                &--icon{
+                    fill: $color-blue;
+                    width: 15rem;
+                    height: 15rem;
+                    margin-top: -8rem;
+
+                    display: block;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                }
                 &--h2{
                     font-size: 2.3rem;
                     font-family: 'Times New Roman', Times, serif;
@@ -82,19 +104,27 @@
                 }
 
                 &--p2{
-                    font-size: 1.2rem;
-                    font-style: oblique;
-                    font-weight: 100;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 300;
                     letter-spacing: .1rem;
                     line-height: 1.6;
                 }
             }
 
             &--3{
-                // box-shadow: 0 0 .5rem $color-black;
                 background-color: $color-white;
                 padding: 1rem;
                 border-radius: .5rem;
+                &--icon{
+                    fill: $color-yellow;
+                    width: 15rem;
+                    height: 15rem;
+                    margin-top: -8rem;
+                    display: block;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                }
               
 
                 &--h3{
@@ -108,9 +138,9 @@
                 }
 
                 &--p3{
-                    font-size: 1.2rem;
-                    font-style: 1.3rem;
-                    font-weight: 100;
+                    font-family: 'Josefin Sans', sans-serif;
+                    font-size: 1.3rem;
+                    font-weight: 300;
                     letter-spacing: .1rem;
                     line-height: 1.6;
                 }
