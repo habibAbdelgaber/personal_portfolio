@@ -27,8 +27,18 @@
             margin-bottom: 10rem;
             padding-top: 1rem;
             text-align: center;
-            font-weight: 200;
-            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 100;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.8rem;
+            letter-spacing: .1rem;
+            cursor: pointer;
+            transition: all .5s linear;
+            &:hover{
+                // text-transform: uppercase;
+                transform: scale(1.1);
+                animation: changeColor 1s .2s infinite;
+
+            }
             @media (max-width: 375px){
                 font-size: 1.5rem;
             }
@@ -155,5 +165,20 @@
         }
     }
 
+}
+
+
+@keyframes changeColor{
+    0%{
+        color: $color-coral;
+    }
+
+    50%{
+        color: $color-blue;
+    }
+
+    100%{
+        color: $color-yellow;
+    }
 }
 

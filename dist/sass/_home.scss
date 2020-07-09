@@ -47,7 +47,7 @@
             li{
                 letter-spacing: .1rem;
                 padding: .5rem 0;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Times New Roman', Times, serif;
                 list-style: none;
             }
         }
@@ -57,7 +57,8 @@
         position: relative;
         &--img{
             border-radius: 50%;
-            border-inline-color: $color-white;
+            // border-color: .2rem $color-white;
+            border: .5rem solid rgba($color-white, .4);
         }
 
         &--title{
@@ -72,6 +73,10 @@
             cursor: pointer;
             border: .1rem $color-white solid;
             transform: skew(4deg, 5deg);
+            @media (max-width: 425px){
+                top: 74%;
+                left: 15%;
+            }
             transition: all .3s;
             &:hover{
                 transform: scale(1.1);
@@ -264,11 +269,12 @@
         }
         &--2{
             &--title{
-                font-family: Arial, Helvetica, sans-serif;
+                // font-family: Arial, Helvetica, sans-serif;
+                font-family: 'Josefin Sans', sans-serif;
                 padding-top: 1.5rem;
-                font-size: 1.7rem;
+                font-size: 2.5rem;
                 padding-left: 1.5rem;
-                font-weight: 200;
+                font-weight: 100;
 
             }
 
@@ -277,6 +283,9 @@
                 padding-left: 1rem;
                 text-transform: uppercase;
                 font-weight: 700;
+                @media (max-width: 425px){
+                    padding-left: 1.5rem;
+                }
 
             }
             &--p{

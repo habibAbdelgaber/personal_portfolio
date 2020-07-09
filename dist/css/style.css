@@ -36,8 +36,15 @@ body {
       margin-bottom: 10rem;
       padding-top: 1rem;
       text-align: center;
-      font-weight: 200;
-      font-family: 'Josefin Sans', sans-serif; }
+      font-weight: 100;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 1.8rem;
+      letter-spacing: .1rem;
+      cursor: pointer;
+      transition: all .5s linear; }
+      .container__home--title:hover {
+        transform: scale(1.1);
+        animation: changeColor 1s .2s infinite; }
       @media (max-width: 375px) {
         .container__home--title {
           font-size: 1.5rem; } }
@@ -135,6 +142,14 @@ body {
           line-height: 2.5rem;
           color: grey; }
 
+@keyframes changeColor {
+  0% {
+    color: #ff6600; }
+  50% {
+    color: #0000ff; }
+  100% {
+    color: #ffff00; } }
+
 .footer {
   position: relative;
   background-color: rgba(0, 153, 255, 0.5);
@@ -187,6 +202,9 @@ body {
     letter-spacing: .1rem;
     font-family: 'Times New Roman', Times, serif;
     font-style: oblique; }
+    .footer__paragraph i {
+      color: #f00;
+      font-weight: 900; }
 
 .heading {
   position: relative;
@@ -310,13 +328,13 @@ body {
     .content__1--info li {
       letter-spacing: .1rem;
       padding: .5rem 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       list-style: none; }
   .content__2 {
     position: relative; }
     .content__2--img {
       border-radius: 50%;
-      border-inline-color: #fff; }
+      border: 0.5rem solid rgba(255, 255, 255, 0.4); }
     .content__2--title {
       color: #fff;
       position: absolute;
@@ -330,6 +348,10 @@ body {
       border: 0.1rem #fff solid;
       transform: skew(4deg, 5deg);
       transition: all .3s; }
+      @media (max-width: 425px) {
+        .content__2--title {
+          top: 74%;
+          left: 15%; } }
       .content__2--title:hover {
         transform: scale(1.1);
         transform: skew(5deg, 6deg);
@@ -465,16 +487,19 @@ body {
             margin-right: 4rem;
             overflow: hidden; } }
     .about__4--2--title {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Josefin Sans', sans-serif;
       padding-top: 1.5rem;
-      font-size: 1.7rem;
+      font-size: 2.5rem;
       padding-left: 1.5rem;
-      font-weight: 200; }
+      font-weight: 100; }
     .about__4--2--fq {
       font-family: 'Josefin Sans', sans-serif;
       padding-left: 1rem;
       text-transform: uppercase;
       font-weight: 700; }
+      @media (max-width: 425px) {
+        .about__4--2--fq {
+          padding-left: 1.5rem; } }
     .about__4--2--p {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 1.5rem;
