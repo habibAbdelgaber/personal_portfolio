@@ -247,7 +247,8 @@ body {
         font-size: 1.5rem; }
         .heading__title--sub-title--1::first-letter {
           color: cornflowerblue;
-          font-size: 1.7rem; }
+          font-size: 3rem;
+          padding: 3rem 0; }
       .heading__title--sub-title--2 {
         display: block;
         padding: .7rem 0;
@@ -619,6 +620,10 @@ $breakpoint argument choices:
     .container__nav {
       top: 4rem;
       left: 3rem; } }
+  @media (max-width: 425px) {
+    .container__nav {
+      top: 1rem;
+      left: 17rem; } }
   .container__nav--menu {
     color: white;
     width: 3rem;
@@ -639,7 +644,7 @@ $breakpoint argument choices:
 
 .menu:hover .line:nth-child(1) {
   width: 2rem;
-  background-color: lightgreen;
+  background-color: #f00;
   transform: rotateZ(-40deg);
   transform-origin: 73%; }
 
@@ -647,7 +652,7 @@ $breakpoint argument choices:
   display: none; }
 
 .menu:hover .line:nth-child(3) {
-  background-color: lightgreen;
+  background-color: #f00;
   width: 2rem;
   transform: rotateZ(40deg);
   transform-origin: 73%; }

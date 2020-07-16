@@ -8,6 +8,11 @@
             left: 3rem;
 
         }
+
+        @media (max-width: 425px){
+            top: 1rem;
+            left: 17rem;
+        }
         &--menu{
             color: white;
             width: 3rem;
@@ -38,7 +43,7 @@
 // Nav menu transformed to x
 .menu:hover .line:nth-child(1){
     width: 2rem;
-    background-color: $color-lightgreen;
+    background-color: $color-red;
     transform: rotateZ(-40deg);
     transform-origin: 73%;
 }
@@ -46,7 +51,7 @@
     display: none;
 }
 .menu:hover .line:nth-child(3){
-    background-color: $color-lightgreen;
+    background-color: $color-red;
     width: 2rem;
     transform: rotateZ(40deg);
     transform-origin: 73%;
