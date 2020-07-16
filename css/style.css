@@ -63,7 +63,9 @@ body {
       .container__home__banners--1 {
         background-color: #fff;
         padding: 1rem;
-        border-radius: .5rem; }
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all 3s; }
         .container__home__banners--1--icon {
           width: 15rem;
           height: 15rem;
@@ -263,7 +265,7 @@ body {
         text-decoration: none;
         margin: 1rem 0 0 auto;
         display: block;
-        transition: all .5s;
+        transition: all 5s;
         font-weight: 100; }
         @media (max-width: 768px) {
           .heading__title--sub-title--3 {
@@ -291,6 +293,83 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
+
+.container__logo {
+  position: absolute;
+  z-index: 100;
+  top: 1%;
+  left: 76%; }
+  @media (max-width: 48em) {
+    .container__logo {
+      top: 1%;
+      left: 67%; } }
+  @media (max-width: 26.5625em) {
+    .container__logo {
+      top: 1%;
+      left: 20%; } }
+  @media (max-width: 23.4375em) {
+    .container__logo {
+      top: 1%;
+      left: 15%; } }
+  @media (max-width: 20em) {
+    .container__logo {
+      top: 1%;
+      left: 5%; } }
+  .container__logo--title {
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer; }
+    .container__logo--title span {
+      display: inline-block;
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #0000ff;
+      background-color: #fff;
+      margin: 0.5rem;
+      border-radius: 50%;
+      transition: all .5s;
+      padding: 0 .4rem; }
+    .container__logo--title span:nth-child(1) {
+      animation: drop-letters 5s .1s infinite;
+      color: #ff6600;
+      box-shadow: 0 0 0.5rem #ff6600; }
+    .container__logo--title span:nth-child(2) {
+      animation: drop-letters 5s .2s infinite;
+      color: #ffff00;
+      box-shadow: 0 0 0.5rem #ffff00; }
+    .container__logo--title span:nth-child(3) {
+      animation: drop-letters 5s .3s infinite;
+      color: #00cc00;
+      box-shadow: 0 0 0.5rem #00cc00; }
+    .container__logo--title span:nth-child(4) {
+      animation: drop-letters 5s .4s infinite;
+      color: #000;
+      box-shadow: 0 0 0.5rem #000; }
+    .container__logo--title span:nth-child(5) {
+      animation: drop-letters 5s .5s infinite;
+      color: #777;
+      box-shadow: 0 0 0.5rem #777; }
+    .container__logo--title span:nth-child(6) {
+      animation: drop-letters 5s .6s infinite;
+      color: #3366ff;
+      box-shadow: 0 0 0.5rem #3366ff; }
+    .container__logo--title span:nth-child(7) {
+      animation: drop-letters 5s .7s infinite;
+      color: crimson;
+      box-shadow: 0 0 0.5rem crimson; }
+
+@keyframes drop-letters {
+  0% {
+    transform: translateY(0); }
+  10% {
+    transform: translateY(0); }
+  15% {
+    transform: translateY(-100%); }
+  20% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(0); } }
 
 .container__showcase {
   background: rgba(0, 153, 255, 0.4);
@@ -461,7 +540,7 @@ body {
     .about__4--1 {
       overflow: hidden; }
       .about__4--1--image {
-        width: 55rem;
+        width: 59rem;
         height: 50rem;
         border-radius: 1rem 8rem 1rem 8rem; }
         @media (max-width: 768px) {
@@ -531,6 +610,47 @@ $breakpoint argument choices:
   transition: opacity 1.5s ease-out; }
   .reveal-item--is-visible {
     opacity: 1; }
+
+.container__nav {
+  position: relative;
+  top: 1.5rem;
+  left: 3rem; }
+  @media (max-width: 768px) {
+    .container__nav {
+      top: 4rem;
+      left: 3rem; } }
+  .container__nav--menu {
+    color: white;
+    width: 3rem;
+    height: 1rem;
+    position: absolute;
+    z-index: 500;
+    cursor: pointer; }
+    .container__nav--menu:hover {
+      transform: rotate(90deg); }
+    .container__nav--menu--lines {
+      background-color: #fff;
+      margin: .4rem 0;
+      height: .3rem;
+      border-radius: .4rem;
+      transition: all 2s; }
+      .container__nav--menu--lines:hover {
+        background-color: lightgreen; }
+
+.menu:hover .line:nth-child(1) {
+  width: 2rem;
+  background-color: lightgreen;
+  transform: rotateZ(-40deg);
+  transform-origin: 73%; }
+
+.menu:hover .line:nth-child(2) {
+  display: none; }
+
+.menu:hover .line:nth-child(3) {
+  background-color: lightgreen;
+  width: 2rem;
+  transform: rotateZ(40deg);
+  transform-origin: 73%; }
 
 a {
   text-decoration: none; }

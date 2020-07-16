@@ -44,6 +44,7 @@
         &--info{
             font-size: 1.5rem;
             padding: .7rem 0;
+          
             li{
                 letter-spacing: .1rem;
                 padding: .5rem 0;
@@ -235,9 +236,10 @@
         &--1{
             overflow: hidden;
             &--image{
-                width: 55rem;
+                width: 59rem;
                 height: 50rem;
                 border-radius: 1rem 8rem 1rem 8rem;
+                // margin-left: 1rem;
                 @media (max-width: 768px){
                     border-radius: 1rem 6rem 1rem 6rem;
                     width: 35rem;
