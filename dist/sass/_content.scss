@@ -60,6 +60,8 @@
                 background-color: $color-white;
                 padding: 1rem;
                 border-radius: .5rem;
+                cursor: pointer;
+                transition: all 3s;
                 
                 &--icon{
                     width: 15rem;
@@ -89,6 +91,9 @@
                     font-weight: normal;
                     line-height: 2.5rem;
                     color: $color-grey;
+                    // &:hover{
+                    //     color: $color-white;
+                    // }
                 }
             }
 

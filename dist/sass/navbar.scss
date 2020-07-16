@@ -1,3 +1,56 @@
+.container{
+    &__nav{
+        position: relative;
+        top: 1.5rem;
+        left: 3rem;
+        @media (max-width: 768px){
+            top: 4rem;
+            left: 3rem;
+
+        }
+        &--menu{
+            color: white;
+            width: 3rem;
+            height: 1rem;
+            position: absolute;
+            z-index: 500;
+            cursor: pointer;
+            &:hover{
+                transform: rotate(90deg);
+
+            }
+            
+            &--lines{
+                
+                background-color: $color-white;
+                margin: .4rem 0;
+                height: .3rem;
+                border-radius: .4rem;
+                transition: all 2s;
+                &:hover{
+                    background-color: $color-lightgreen;
+                }
+            }
+            
+        }
+    }
+}
+// Nav menu transformed to x
+.menu:hover .line:nth-child(1){
+    width: 2rem;
+    background-color: $color-lightgreen;
+    transform: rotateZ(-40deg);
+    transform-origin: 73%;
+}
+.menu:hover .line:nth-child(2){
+    display: none;
+}
+.menu:hover .line:nth-child(3){
+    background-color: $color-lightgreen;
+    width: 2rem;
+    transform: rotateZ(40deg);
+    transform-origin: 73%;
+}
 
 
 
